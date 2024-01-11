@@ -2,8 +2,11 @@ import os
 from shutil import move
 from time import sleep
 
+dir = ""
 
 def main():
+    if dir:
+        os.chdir(dir)
     try:
         os.mkdir("documents")
     except:
